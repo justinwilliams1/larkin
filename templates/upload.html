@@ -1,0 +1,32 @@
+<html>
+    <style type="text/css">/* Fonts from Google Fonts - more at https://fonts.google.com */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
+h1 {
+	align-content:center;
+}
+body {
+  color: white;
+  background-image: url("https://photos.smugmug.com/2018-2019-Events/Learning-Village/Grades-5-8/The-Love-of-Three-Oranges/i-8GSSzZk/0/d7e07068/X5/DSC09715-X5.jpg");
+}
+input {
+  margin-left:350%;
+  margin-top:70%;
+  height:100px;
+  width:200px;
+}
+form{
+  align-self:center;
+  height:100px;
+  width:200px;
+}
+</style>
+<h1>Play Weekly Schecdule Generator</h1>
+   <body>
+      <form action = "http://localhost:5000/uploader" method = "POST" 
+         enctype = "multipart/form-data">
+         <input type = "file" name = "file" size = "100"/>
+         <input type = "submit"/>
+      </form>
+   </body>
+</html

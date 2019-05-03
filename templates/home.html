@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Thimble Sample</title>
+    <style type="text/css">/* Fonts from Google Fonts - more at https://fonts.google.com */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
+
+body {
+  background-image: url("https://photos.smugmug.com/2018-2019-Events/Learning-Village/Grades-5-8/The-Love-of-Three-Oranges/i-8GSSzZk/0/d7e07068/X5/DSC09715-X5.jpg");
+  background-color: #cccccc;
+  background-size: 2000px;
+  font-family: "Open Sans", sans-serif;
+  padding: 10px 25px;
+  font-size: 25px;
+  margin: 15;
+  color: #444;
+}
+
+h1 {
+  font-family: "Merriweather", serif;
+  font-size: 50px;
+  color:aliceblue;
+}
+
+p {
+  font-family: "Garamond", serif;
+  font-size: 24px;
+  color:aliceblue;
+}
+
+#realfile {
+  padding: 75px 150px;
+  color: white;
+  font-size: 20px;
+  background-color: maroon;
+  border: 1px solid #000;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 50px;
+  
+}
+
+#realfile:hover {
+  background-color: #00b28f;
+}
+
+#custom-text {
+  padding: 75px 150px;
+  margin: 10px;
+  font-family: sans-serif;
+  color: #aaa;
+}
+
+#format {
+  margin-top: 50px;
+}
+
+#generate-button {
+  padding: 75px 150px;
+  color: white;
+  font-size: 20px;
+  background-color: maroon;
+  border: 1px solid #000;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 50px;
+}
+#generate-button:hover{
+  background-color:#00b28f;
+}</style>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <center>
+      <h1>
+        Play Calender Helper
+      </h1>
+      <p>
+      Upload two .csv files then press generate!
+      </p>
+
+      <div id=format>
+      <input type="file" id="realfile"/>
+      <script>
+function myFunction() {
+  alert("Fuck you")
+  var files = document.getElementById("realfile").files;
+  var file = realfile.files[0];
+  alert(files)
+  alert(realfile.files[0])
+  
+  alert("File name: " + file.fileName);
+}
+
+</script>
+      
+      </div>
+      <button id="generate-button" onclick="window.location.href='/generate'">GENERATE</button>
